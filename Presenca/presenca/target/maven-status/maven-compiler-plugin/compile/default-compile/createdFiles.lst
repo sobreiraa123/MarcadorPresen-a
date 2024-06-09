@@ -1,0 +1,5 @@
+com/example/presenca/controller/PresencaController.class
+com/example/presenca/PresencaApplication.class
+com/example/presenca/repository/PresencaRepository.class
+com/example/presenca/service/PresencaService.class
+com/example/presenca/model/Presenca.class

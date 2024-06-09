@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marcar Presença Docente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #343a40;
+        }
+        input[type="text"], input[type="datetime-local"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 22px);
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marcar Presença Docente</h1>
+        <form action="/salvar-presenca-docente" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="disciplina" placeholder="Disciplina" required>
+            <input type="datetime-local" name="dataHora" required>
+            <button type="submit">Marcar Presença</button>
+        </form>
+        <a href="/">Voltar ao Início</a>
+    </div>
+</body>
+</html>
